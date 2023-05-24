@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="1057.0" style="-fx-background-color: white;" stylesheets="@../../../../../../Downloads/Template.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLStats">
+   <children>
+      <Accordion layoutX="88.0" layoutY="156.0" />
+      <PieChart fx:id="pieChart" layoutX="276.0" layoutY="73.0" />
+   </children>
+</AnchorPane>

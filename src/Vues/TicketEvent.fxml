@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="958.0" styleClass="bg-form" stylesheets="@../gui/login%20desin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TicketEventController"> 
+    <children>
+      <TableView fx:id="table_ticket" layoutX="99.0" layoutY="252.0" prefHeight="98.0" prefWidth="830.0" stylesheets="@../Assets/Styles.css">
+        <columns>
+          <TableColumn fx:id="numTicket" prefWidth="128.0" style="-fx-alignment: center;" text="Ticket" />
+            <TableColumn fx:id="evenement" minWidth="0.0" prefWidth="100.0" style="-fx-alignment: center;" text="Evénement " />
+          <TableColumn fx:id="nbMaxT" prefWidth="100.0" style="-fx-alignment: center;" text="Max Tickets" />
+            <TableColumn fx:id="nbTDemande" prefWidth="100.0" style="-fx-alignment: center;" text="Tickets demandés" />
+            <TableColumn fx:id="prixF" prefWidth="100.0" style="-fx-alignment: center;" text="Prix" />
+            <TableColumn fx:id="offre" prefWidth="100.0" style="-fx-alignment: center;" text="Offre" />
+            <TableColumn fx:id="editcol" minWidth="0.0" prefWidth="200.0" text="Action" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#261e2ee8" height="48.0" layoutY="62.0" stroke="#3d291d" strokeType="INSIDE" width="929.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1c1905e9" height="97.0" layoutX="705.0" layoutY="38.0" stroke="#d70068" strokeType="INSIDE" width="216.0" />
+      <Text fill="#f2f2f5" layoutX="49.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket de l'évènement">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="113.0" fitWidth="177.0" layoutX="733.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="99.0" layoutY="182.0" prefHeight="25.0" prefWidth="111.0" text="Evénement  : ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="event_name_label" layoutX="212.0" layoutY="181.0" prefHeight="17.0" prefWidth="838.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+    
+</AnchorPane>

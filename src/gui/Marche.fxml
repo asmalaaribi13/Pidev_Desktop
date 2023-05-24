@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="800.0" styleClass="bg-form" stylesheets="@login%20desin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MarcheController">
+   <children>
+      <TextField fx:id="txtDesc" layoutX="526.0" layoutY="220.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css" />
+      <TextField fx:id="txtDate" layoutX="173.0" layoutY="431.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css" />
+      <TextField fx:id="txtQte" layoutX="526.0" layoutY="273.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css" />
+      <TextField fx:id="txtPrix" layoutX="526.0" layoutY="330.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css" />
+      <Button fx:id="suiv" layoutX="233.0" layoutY="506.0" mnemonicParsing="false" onAction="#suiv" styleClass="login-btn" stylesheets="@login-desin.css" text="-&gt;" />
+      <Button fx:id="pred" layoutX="186.0" layoutY="506.0" mnemonicParsing="false" onAction="#pred" styleClass="login-btn" stylesheets="@login-desin.css" text="&lt;-" />
+      <Label layoutX="183.0" layoutY="56.0" text="Marché des Produits" textFill="#0b0a0a">
+         <font>
+            <Font name="Book Antiqua" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="txt_image" fitHeight="227.0" fitWidth="280.0" layoutX="42.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtcteg" layoutX="526.0" layoutY="377.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css" />
+      <TextField fx:id="txtNom" layoutX="526.0" layoutY="167.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css" />
+      <Text fill="#e70549" layoutX="409.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Produit" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#e70549" layoutX="409.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#e70549" layoutX="65.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date du produit" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#e70549" layoutX="409.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#e70549" layoutX="409.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Produit" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#e70549" layoutX="409.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="513.0" layoutY="495.0" mnemonicParsing="false" onAction="#ajouterProduit" prefHeight="54.0" prefWidth="150.0" stylesheets="@login%20desin.css" text="Ajouter Panier">
+         <styleClass>
+            <String fx:value="ali-box" />
+            <String fx:value="bg-form" />
+            <String fx:value="login-btn" />
+         </styleClass></Button>
+
+      
+   </children>
+</AnchorPane>

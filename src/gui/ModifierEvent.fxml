@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.paint.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bg-form" stylesheets="@login%20desin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ModifierEventController">
+   <children>
+      <Button layoutX="393.0" layoutY="468.0" mnemonicParsing="false" onAction="#modifierButton" prefHeight="39.0" prefWidth="150.0" stylesheets="@login%20desin.css" text="               Modifier">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="login-btn" />
+            <String fx:value="ali-box" />
+         </styleClass></Button>
+      <Label layoutX="17.0" layoutY="281.0" prefHeight="18.0" prefWidth="98.0" text="NomEvent" textFill="#0d0d0d">
+         <font>
+            <Font name="Cambria Italic" size="12.0" />
+         </font></Label>
+
+         <TextField fx:id="nom" layoutX="113.0" layoutY="277.0" promptText="Event"  style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login%20desin.css" />
+
+      <TextField fx:id="Localisation" layoutX="96.0" layoutY="400.0" promptText="Location" styleClass="textfield"   style="-fx-text-fill: black"stylesheets="@login%20desin.css" />
+      <TextField fx:id="Description" layoutX="113.0" layoutY="314.0" promptText="Desc"  style="-fx-text-fill: black"styleClass="textfield" stylesheets="@login%20desin.css" />
+      <Label layoutX="11.0" layoutY="404.0" prefHeight="18.0" prefWidth="110.0" text="Localisation" textFill="#0d0d0d">
+         <font>
+            <Font name="Cambria Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="318.0" prefHeight="18.0" prefWidth="98.0" text="Description" textFill="#0d0d0d">
+         <font>
+            <Font name="Cambria Italic" size="12.0" />
+         </font></Label>
+      <DatePicker fx:id="DateDebut" layoutX="367.0" layoutY="327.0" />
+      <DatePicker fx:id="DateFin" layoutX="367.0" layoutY="378.0" />
+      <Label layoutX="305.0" layoutY="331.0" prefHeight="18.0" prefWidth="39.0" text="Debut" textFill="#0d0d0d">
+         <font>
+            <Font name="Cambria Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="305.0" layoutY="381.0" prefHeight="18.0" prefWidth="48.0" text="Fin" textFill="#0d0d0d">
+         <font>
+            <Font name="Cambria Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="459.0" prefHeight="18.0" prefWidth="98.0" text="Heure" textFill="#0d0d0d">
+         <font>
+            <Font name="Cambria Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="heure" layoutX="90.0" layoutY="455.0" promptText="00.PM"  style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login%20desin.css" />
+      <TextField fx:id="prix" layoutX="113.0" layoutY="356.0" promptText="Prix£££"  style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login%20desin.css" />
+      <Label layoutX="17.0" layoutY="360.0" prefHeight="18.0" prefWidth="98.0" text="Prix Ticket" textFill="#0d0d0d">
+         <font>
+            <Font name="Cambria Italic" size="12.0" />
+         </font></Label>
+      <ImageView fx:id="PhotoE" fitHeight="63.0" fitWidth="74.0" layoutX="263.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/icons/user.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="216.0" layoutY="162.0" mnemonicParsing="false" onAction="#modifierPhoto" stylesheets="@login%20desin.css" text="            Importer une image">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="login-btn" />
+            <String fx:value="ali-box" />
+         </styleClass></Button>
+      <TextField fx:id="id" layoutX="121.0" layoutY="242.0" promptText="Id" styleClass="textfield" stylesheets="@login%20desin.css"   style="-fx-text-fill: black"/>
+      <Label layoutX="17.0" layoutY="246.0" prefHeight="18.0" prefWidth="98.0" text="id Event" textFill="#0d0d0d">
+         <font>
+            <Font name="Cambria Italic" size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="228.0" layoutY="161.0">
+         <image>
+            <Image url="@../photos/photo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="399.0" layoutY="468.0">
+         <image>
+            <Image url="@../photos/edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="63.0" layoutX="413.0" layoutY="262.0">
+         <image>
+            <Image url="@../photos/deadline.png" />
+         </image>
+      </ImageView>
+      <Text fill="#1e1d1d" layoutX="101.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier évènement " textAlignment="CENTER" wrappingWidth="397.47076416015625">
+         <font>
+            <Font name="Snap ITC" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="561.0" styleClass="bg-form" stylesheets="@login%20desin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjoutEventController">
+   <children>
+      <Button layoutX="42.0" layoutY="464.0" mnemonicParsing="false" onAction="#AjoutEvent" prefHeight="46.0" prefWidth="113.0" stylesheets="@login%20desin.css" text="      AJOUT">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="ali-box" />
+            <String fx:value="login-btn" />
+         </styleClass></Button>
+      <Label layoutX="14.0" layoutY="210.0" prefHeight="18.0" prefWidth="72.0" text="NomEvent" textFill="#181818">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font></Label>
+      <TextField fx:id="NomEvent" layoutX="99.0" layoutY="210.0" opacity="0.46" promptText="Event" styleClass="textfield" stylesheets="@login%20desin.css" />
+      <TextField fx:id="Localisation" layoutX="99.0" layoutY="296.0" opacity="0.47" promptText="Location" styleClass="textfield" stylesheets="@login%20desin.css" />
+      <TextField fx:id="Description" layoutX="99.0" layoutY="342.0" opacity="0.47" promptText="DESC" styleClass="textfield" stylesheets="@login%20desin.css" />
+      <Label layoutX="14.0" layoutY="304.0" prefHeight="18.0" prefWidth="72.0" text="Localisation" textFill="#181818">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="346.0" prefHeight="18.0" prefWidth="72.0" text="Description" textFill="#181818">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font></Label>
+      <DatePicker fx:id="DateDebut" layoutX="342.0" layoutY="291.0" stylesheets="@login%20desin.css" />
+      <DatePicker fx:id="DateFin" layoutX="353.0" layoutY="342.0" />
+      <Label layoutX="281.0" layoutY="294.0" prefHeight="18.0" prefWidth="50.0" text="Debut" textFill="#181818">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font></Label>
+      <Label layoutX="306.0" layoutY="345.0" prefHeight="18.0" prefWidth="25.0" text="Fin" textFill="#181818">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="261.0" prefHeight="18.0" prefWidth="66.0" text="Heure" textFill="#181818">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font></Label>
+      <TextField fx:id="HeureEvent" layoutX="99.0" layoutY="257.0" opacity="0.52" promptText="00PM" styleClass="textfield" stylesheets="@login%20desin.css" />
+      <TextField fx:id="Prix" layoutX="99.0" layoutY="394.0" opacity="0.47" promptText="Prix§§" styleClass="textfield" stylesheets="@login%20desin.css" />
+      <Label layoutX="14.0" layoutY="397.0" prefHeight="18.0" prefWidth="72.0" text="Prix Ticket" textFill="#181818">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font></Label>
+      <Button layoutX="353.0" layoutY="426.0" mnemonicParsing="false" onAction="#ajout_image" prefHeight="38.0" prefWidth="175.0" stylesheets="@login%20desin.css" text="          Importer une image">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="ali-box" />
+            <String fx:value="login-btn" />
+         </styleClass></Button>
+      <ImageView fx:id="PhotoE" fitHeight="124.0" fitWidth="123.0" layoutX="405.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="154.0" layoutY="58.0" text="Ajouter un Event" textFill="#535353">
+         <font>
+            <Font name="Snap ITC" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="51.0" layoutY="468.0">
+         <image>
+            <Image url="@../photos/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="360.0" layoutY="426.0">
+         <image>
+            <Image url="@../photos/photo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

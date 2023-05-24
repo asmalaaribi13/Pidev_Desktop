@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CheckoutController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="257.0" styleClass="bg-form" stylesheets="@login%20desin.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/jimmy-fallon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="50.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <AnchorPane prefHeight="27.0" prefWidth="134.0" />
+                  <Button fx:id="Checkout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#Checkout" prefHeight="42.0" prefWidth="259.0" styleClass="login-btn" stylesheets="@login%20desin.css" text="Checkout">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Slider__32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+               <children>
+                  <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnlOverview" prefHeight="576.0" prefWidth="848.0" styleClass="bg-form" stylesheets="@login%20desin.css">
+                     <children>
+                        <TextField layoutX="590.0" layoutY="47.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css" />
+                        <Label layoutX="57.0" layoutY="25.0" text="checkout" textFill="#bc236a">
+                           <font>
+                              <Font name="System Bold Italic" size="33.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="72.0" prefHeight="92.0" prefWidth="661.0" spacing="50.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label fx:id="tot" textFill="#2a73ff">
+                                       <font>
+                                          <Font name="System Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Total " textFill="#2e2c2c" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="178.0" prefHeight="42.0" prefWidth="712.0" spacing="80.0" stylesheets="@login-desin.css">
+                           <children>
+                              <Label text="Nom_Client" textFill="#2e2c2c">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="Nom_Produit" textFill="#2e2c2c">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="749.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Search_52px.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="payer" layoutX="682.0" layoutY="416.0" mnemonicParsing="false" onAction="#payer" prefHeight="27.0" prefWidth="96.0" stylesheets="@login-desin.css" text="PAYER" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="ali-box" />
+                              <String fx:value="bg-form" />
+                              <String fx:value="login-btn" />
+                           </styleClass></Button>
+                        <TextField fx:id="nomC" layoutX="32.0" layoutY="220.0" prefHeight="27.0" prefWidth="121.0" promptText="search" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login%20desin.css" text="Nom_Client" />
+                        <TextField fx:id="nomP" layoutX="192.0" layoutY="220.0" prefHeight="27.0" prefWidth="121.0" promptText="search" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login%20desin.css" text="Nom_Produit">
+                           <font>
+                              <Font size="14.0" />
+                           </font></TextField>
+                        <AnchorPane layoutX="68.0" layoutY="496.0" prefHeight="35.0" prefWidth="177.0" />
+                        <TextField fx:id="numcarte" layoutX="484.0" layoutY="355.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login%20desin.css" />
+                        <TextField fx:id="expirmois" layoutX="484.0" layoutY="404.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login%20desin.css" />
+                        <TextField fx:id="expyear" layoutX="484.0" layoutY="449.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login%20desin.css" />
+                        <TextField fx:id="cvc" layoutX="484.0" layoutY="496.0" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login%20desin.css" />
+                        <Label layoutX="417.0" layoutY="359.0" text="numcarte" />
+                        <Label layoutX="428.0" layoutY="407.0" text="expirmois" />
+                        <Label layoutX="428.0" layoutY="453.0" text="expyear" />
+                        <Label layoutX="442.0" layoutY="500.0" text="cvc" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+         <effect>
+            <DropShadow color="#1b1eeb" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="1036.0" styleClass="bg-form" stylesheets="@login%20desin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InsertController">
+   <children>
+      <TextField fx:id="txtNom" focusTraversable="false" layoutX="154.0" layoutY="173.0" prefHeight="43.0" prefWidth="190.0" promptText="Saisir le nom du produit" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      
+        
+      
+      <Text layoutX="38.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Produit" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description produit" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Produit" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Produit" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDesc" focusTraversable="false" layoutX="154.0" layoutY="224.0" prefHeight="43.0" prefWidth="190.0" promptText="Saisir la description du produit" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtQte" focusTraversable="false" layoutX="154.0" layoutY="378.0" prefHeight="43.0" prefWidth="190.0" promptText="Saisir la quantité de ce produit" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtPrix" focusTraversable="false" layoutX="154.0" layoutY="328.0" prefHeight="43.0" prefWidth="190.0" promptText="Saisir le prix du produit" style="-fx-text-fill: black" styleClass="textfield" stylesheets="@login-desin.css">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <Text layoutX="38.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité Produit" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo Produit" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <TableView fx:id="T_View_Produit" layoutX="402.0" layoutY="177.0" prefHeight="246.0" prefWidth="597.0">
+        <columns>
+          <TableColumn fx:id="txt_ID" prefWidth="75.0" text="Id_Produit" />
+          <TableColumn fx:id="txt_Nom" prefWidth="75.0" text="Nom_Produit" />
+            <TableColumn fx:id="txt_Desc" prefWidth="75.0" text="Desc_Produit" />
+            <TableColumn fx:id="txt_Date" prefWidth="75.0" text="Date_Produit" />
+            <TableColumn fx:id="txt_Prix" prefWidth="75.0" text="Prix_Produit" />
+            <TableColumn fx:id="txt_Qte" prefWidth="75.0" text="Qte" />
+            <TableColumn fx:id="txt_Photo" prefWidth="75.0" text="Photo" />
+            <TableColumn fx:id="txt_cat" prefWidth="75.0" text="Nom_Categorie" />
+        </columns>
+      </TableView>
+     
+      
+     
+      <Label layoutX="255.0" layoutY="49.0" prefHeight="54.0" prefWidth="360.0" text="Ajout d'un Produit" textFill="#eb2190dd">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="tPhotoP" fitHeight="44.0" fitWidth="43.0" layoutX="214.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true" />
+      
+      <DatePicker fx:id="txtDate" layoutX="152.0" layoutY="299.0" prefHeight="26.0" prefWidth="190.0" promptText="Saisir la date du produit" styleClass="bg-form" stylesheets="@login-desin.css" />
+      <Button fx:id="btnAjouter" layoutX="497.0" layoutY="442.0" mnemonicParsing="false" onAction="#Ajouter_Produit" prefHeight="40.0" prefWidth="90.0" stylesheets="@login%20desin.css" text="Ajouter" textFill="#a11f1f">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="ali-box" />
+            <String fx:value="bg-form" />
+            <String fx:value="login-btn" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btnModifier" layoutX="605.0" layoutY="442.0" mnemonicParsing="false" onAction="#Modifier_Produit" prefHeight="40.0" prefWidth="90.0" stylesheets="@login%20desin.css" text="Modifier" textFill="#a11f1f">
+         <styleClass>
+            <String fx:value="ali-box" />
+            <String fx:value="bg-form" />
+            <String fx:value="login-btn" />
+         </styleClass>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnSupprimer" layoutX="712.0" layoutY="442.0" mnemonicParsing="false" onAction="#Supprimer_Produit" prefHeight="40.0" prefWidth="90.0" stylesheets="@login%20desin.css" text="Supprimer" textFill="#a11f1f">
+         <styleClass>
+            <String fx:value="ali-box" />
+            <String fx:value="bg-form" />
+            <String fx:value="login-btn" />
+         </styleClass>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnAdd3" layoutX="814.0" layoutY="442.0" mnemonicParsing="false" onAction="#Afficher_Produit" prefHeight="40.0" prefWidth="90.0" stylesheets="@login%20desin.css" text="Afficher" textFill="#a11f1f">
+         <styleClass>
+            <String fx:value="ali-box" />
+            <String fx:value="bg-form" />
+            <String fx:value="login-btn" />
+         </styleClass>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="imagefx" layoutX="166.0" layoutY="496.0" mnemonicParsing="false" onAction="#ajout_image" text="..." />
+      <ComboBox fx:id="combocat" layoutX="160.0" layoutY="449.0" prefWidth="150.0" promptText="Saisir la catégorie" styleClass="uplod-btn" stylesheets="@login-desin.css" />
+      <Text layoutX="38.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie" wrappingWidth="118.0081787109375">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="exp" layoutX="402.0" layoutY="444.0" mnemonicParsing="false" onAction="#export" prefHeight="40.0" prefWidth="79.0" stylesheets="@login%20desin.css" text="Excel" textFill="#cf1313">
+         <styleClass>
+            <String fx:value="ali-box" />
+            <String fx:value="bg-form" />
+            <String fx:value="login-btn" />
+         </styleClass>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      
+      
+
+   </children>
+</AnchorPane>
